@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #0e0d0d;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 50px;
+    height: 70px;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo img {
+    margin-bottom: -65px;
+}
+
+.menu {
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    /* Khoảng cách giữa các mục */
+    font-size: 16px;
+}
+
+.menu li {
+    padding: 0;
+    position: relative;
+}
+.menu li:hover .sub-menu {
+    display: block;
+    visibility: visible;
+top: 30px;
+}
+.menu li a {
+    font-size: 17px;
+    font-weight: bold;
+    display: block;
+    line-height: 20px;
+
+}
+
+.sub-menu {
+    position: absolute;
+    width: 150px;
+    border: 1px solid #ece6e6;
+    padding: 10px 0 10px 20px;
+   visibility: hidden;
+   top: 50px;
+   transition: 0.3s;
+}
+
+.sub-menu ul {
+    padding-left: 20px;
+}
+
+.sub-menu ul a {
+
+    display: block;
+}
+
+.others {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+}
+
+.others li {
+    display: flex;
+    align-items: center;
+}
+
+.others li:first-child {
+    position: relative;
+}
+
+.others li:first-child input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #0e0d0d;
+    padding-right: 12px;
+}
+
+.others li:first-child i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+
+}
