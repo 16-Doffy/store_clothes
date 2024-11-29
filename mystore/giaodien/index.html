@@ -24,18 +24,18 @@
                         <ul>
                             <li><a href=""> Áo somi </a></li>
                             <li> <a href=""> Áo thun</a></li>
-                            <li > <a href="">Áo jean</a></li>
+                            <li> <a href="">Áo jean</a></li>
                         </ul>
                     </li>
                     <li><a href="">Quần</a>
-                    <ul>
-                        <li><a href=""> Quần jogger </a></li>
-                        <li> <a href=""> Quần thun</a></li>
-                        <li > <a href="">Quần jean</a></li>
+                        <ul>
+                            <li><a href=""> Quần jogger </a></li>
+                            <li> <a href=""> Quần thun</a></li>
+                            <li> <a href="">Quần jean</a></li>
 
-                    </ul>
-            </li>
-            </ul>
+                        </ul>
+                    </li>
+                </ul>
             </li>
             <li> <a href="Nam">Nam</a>
 
@@ -55,6 +55,52 @@
             <li><a class="fa fa-shopping-bag" href=""> </a></li>
         </div>
     </header>
+    <section id="Slider">
+        <div class="aspect-ratio-169">
+            <img src="../images/s1.jpg">
+            <img src="../images/s2.jpg">
+            <img src="../images/s3.jpg">
+            <img src="../images/s4.jpg">
+            <img src="../images/s5.jpg">
+        </div>
+        <div class="dot-container">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </section>
 </body>
+<script>
+    const imgPosition = document.querySelectorAll(".aspect-ratio-169 img"); // Các phần tử ảnh
+    const imgContainer = document.querySelector(".aspect-ratio-169"); // Phần tử cha chứa ảnh
+    const dotItem=document.querySelectorAll(".dot");
+    let imgNumber = imgPosition.length;
+    let index = 0;
+
+    imgPosition.forEach(function (images, index) {
+        images.style.left = index * 100 + "%"; // Căn hình ảnh theo chiều ngang
+    dotItem[index].addEventListener("click", function(){
+        Slider(index)
+    })
+    });
+
+    function imgSlide() {
+        index++;
+        if (index >= imgNumber) {
+            index = 0;
+        }
+        imgContainer.style.left = "-" + index * 100 + "%";
+    }
+    function Slider(index) {
+        imgContainer.style.left = "-" + index * 100 + "%";
+       const dotActive = document.querySelector(".active");
+       dotActive.classList.remove("active");
+      dotItem[index].classList.add("active");
+    }
+    // setInterval(imgSlide, 3000);
+
+</script>
 
 </html>
