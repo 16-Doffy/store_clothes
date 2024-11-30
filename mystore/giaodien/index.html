@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Thêm thư viện Iconify -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="../images/logo.png" alt="logo">
+            <img src="../images/df.jpg" alt="logo">
         </div>
 
         <div class="menu">
@@ -49,12 +51,15 @@
         </div>
 
         <div class="others">
-            <li> <input type="text" placeholder="tìm kiếm"> <i class="fas fa-search"></i></li>
-            <li><a class="fa fa-paw" href=""> </a></li>
-            <li><a class="fa fa-user" href=""> </a></li>
-            <li><a class="fa fa-shopping-bag" href=""> </a></li>
+            <li> <input type="text" placeholder="tìm kiếm">  
+                <div class="icon-header"> 
+                 <a href=""> <span class="iconify" data-icon="fa6-brands:facebook"></span></a>
+                <a href=""> <span class="iconify" data-icon="fa6-brands:instagram"></span></a>
+                <a href=""> <span class="iconify" data-icon="fa6-brands:github"></span></a>
+            </div>
         </div>
     </header>
+    <!---------SLIDE------------> 
     <section id="Slider">
         <div class="aspect-ratio-169">
             <img src="../images/s1.jpg">
@@ -71,36 +76,62 @@
             <div class="dot"></div>
         </div>
     </section>
+    <section class="app-container">
+        <p>Tải ứng dụng Doflaming</p>
+        <div class="app-google">
+            <img src="../images/gg.png" alt="Google Play">
+            <img src="../images/df.jpg" alt="App Store">
+        </div>
+        <p>Nhận bản tin Doflamin </p>
+        <input type="text" placeholder="Nhập email của bạn">
+    </section>
+   <!---------FOOTER------------> 
+  <div class="footer-top">
+    <li><a href=""> <img src="../images/td.jpg" alt=""></a></li>
+    <li><a href=""></a>Liên hệ</li>
+    <li><a href=""></a>Tuyển dụng</li>
+    <li><a href=""></a>Giới Thiệu</li>
+    <li>
+        <a href=""> <span class="iconify" data-icon="fa6-brands:facebook"></span></a>
+            <a href=""> <span class="iconify" data-icon="fa6-brands:instagram"></span></a>
+            <a href=""> <span class="iconify" data-icon="fa6-brands:github"></span></a>
+    </li>
+</div>
+<div class="footer-center">
+    <p>Địa chỉ
+        Lô 26-28 Tân Tạo, KCN Tân Tạo, Phường Tân Tạo A, Quận Bình Tân, Tp.HCM <br />
+        Công ty cổ phần thời trang Doffl <br />
+        Đặt hàng online:<span>067892211</span>
+    </p>
+</div>
+<div class="footer-bottom">
+    @Dofla Right Hand Got the bang nocaps!!!
+</div>
+
+
 </body>
 <script>
-    const imgPosition = document.querySelectorAll(".aspect-ratio-169 img"); // Các phần tử ảnh
-    const imgContainer = document.querySelector(".aspect-ratio-169"); // Phần tử cha chứa ảnh
-    const dotItem=document.querySelectorAll(".dot");
-    let imgNumber = imgPosition.length;
-    let index = 0;
+    document.addEventListener("DOMContentLoaded", function() {
+        const toP = document.querySelector(".top");
 
-    imgPosition.forEach(function (images, index) {
-        images.style.left = index * 100 + "%"; // Căn hình ảnh theo chiều ngang
-    dotItem[index].addEventListener("click", function(){
-        Slider(index)
-    })
-    });
-
-    function imgSlide() {
-        index++;
-        if (index >= imgNumber) {
-            index = 0;
+        if (toP) {
+            window.addEventListener("scroll", function() {
+                const Y = this.scrollY;
+                if (Y > 1) {
+                    toP.classList.add("active");
+                } else {
+                    toP.classList.remove("active");
+                }
+            });
         }
-        imgContainer.style.left = "-" + index * 100 + "%";
-    }
-    function Slider(index) {
-        imgContainer.style.left = "-" + index * 100 + "%";
-       const dotActive = document.querySelector(".active");
-       dotActive.classList.remove("active");
-      dotItem[index].classList.add("active");
-    }
-    // setInterval(imgSlide, 3000);
 
+        const itemsliderbar = document.querySelectorAll(".cartegory-left-li");
+        itemsliderbar.forEach(function(menu) {
+            menu.addEventListener("click", function() {
+                menu.classList.toggle("block");
+            });
+        });
+    });
 </script>
 
 </html>
