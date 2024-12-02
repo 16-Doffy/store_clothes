@@ -290,16 +290,14 @@ header:hover {
 /*-------cartegory-----*/
 .cartegory {
   padding: 100px 0 0;
-
 }
 
 .cartegory-top {
   margin-bottom: 50px;
-
 }
 
 .cartegory-top p {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0 12px;
   font-size: 15px;
 }
@@ -315,9 +313,8 @@ header:hover {
 .cartegory-right-top-item:first-child {
   flex: 2;
   font-size: 16px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
-
 }
 
 .cartegory-right-top-item {
@@ -326,7 +323,6 @@ header:hover {
 }
 
 .cartegory-right-top-item button {
-
   width: 100%;
   padding: 10px 15px;
   display: flex;
@@ -356,15 +352,13 @@ header:hover {
   width: calc(25% - 12px);
   text-align: center;
   padding: 12px 0;
-
 }
 
 .cartegory-right-content-item h1 {
   font-size: 17px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-top: 6px;
   color: #858585;
-
 }
 
 .cartegory-right-content-item img {
@@ -378,7 +372,6 @@ header:hover {
 
 .cartegory-right-content-item p {
   font-size: 15px;
-
 }
 
 .cartegory-right-bottom {
@@ -388,7 +381,7 @@ header:hover {
 }
 
 .cartegory-right-bottom p {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 16px;
 }
 
@@ -401,13 +394,11 @@ header:hover {
   font-size: 16px;
   color: black;
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
-
+  font-family: "Courier New", Courier, monospace;
 }
 
 .cartegory-left ul li ul li {
   padding-left: 10px;
-
 }
 
 .cartegory-left-li ul {
@@ -428,7 +419,7 @@ header:hover {
 }
 
 .product-top p {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0 12px;
   font-size: 15px;
 }
@@ -440,7 +431,6 @@ header:hover {
 .product-content-left-big-img {
   width: 73%;
   padding-right: 20px;
-
 }
 
 .product-content-left-big-img img {
@@ -453,34 +443,32 @@ header:hover {
 
 .product-content-left-small-img img {
   width: 100%;
+  cursor: pointer;
 }
 
 .product-content-right {
   width: 50%;
   padding-left: 20px;
-
 }
 /* .product-content-right-product-color-img img{
   border-radius: 50%;
   width: 50px;
 } */
-.product-content-right-product-name h1{
-  font-family: 'Courier New', Courier, monospace;
+.product-content-right-product-name h1 {
+  font-family: "Courier New", Courier, monospace;
   font-size: 16px;
-
 }
-.product-content-right-product-name p{
-color: #858585;
-font-size: 12px;
-
+.product-content-right-product-name p {
+  color: #858585;
+  font-size: 12px;
 }
-.product-content-right-product-price{
+.product-content-right-product-price {
   margin: 12px 0;
   font-size: 20px;
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
-.product-content-right-product-color img{
+.product-content-right-product-color img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -496,7 +484,7 @@ font-size: 12px;
   margin: 12px 0;
 }
 
-.size span{
+.size span {
   display: inline-block;
   padding: 3px 6px;
   border: 1px solid black;
@@ -507,56 +495,98 @@ font-size: 12px;
 .quantity {
   display: flex;
   margin-bottom: 20px;
-
 }
-.quantity input{
+.quantity input {
   width: 35px;
   padding-left: 3px;
   display: block;
 }
-.product-content-right-product-button{
+.product-content-right-product-button {
   width: 150px;
   height: 40px;
   display: block;
-  margin: 20px 0 12px ;
+  margin: 20px 0 12px;
   transition: all 0.5s ease;
 }
 .product-content-right-product-button:first-child {
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-background-color: #ece6e6;
-border: 2px solid black;
-cursor: pointer;
-
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ece6e6;
+  border: 2px solid black;
+  cursor: pointer;
 }
 
-.product-content-right-product-button:first-child:hover{
+.product-content-right-product-button:first-child:hover {
   background-color: #d3d3d3;
   color: wheat;
-
 }
 .product-content-right-product-button:last-child {
-border:2px solid #6951f0;
-color: #46f388;
-background-color: wheat;
-cursor: pointer;
-  }
-  .product-content-right-product-icon{
-    display: flex;
-  }
-  .product-content-right-product-icon-item{
-    display: flex;
-    margin-right: 12px;
-    justify-content: center;
-    align-items: center;
-  }
-  .product-content-right-product-icon-item i{
-    font-size: 12px;
-    margin-right: 6px;
-    
-  }
-  .product-content-right-product-QR img{
-    margin-top: 20px;
-    width: 40%;
-  }
+  border: 2px solid #6951f0;
+  color: #46f388;
+  background-color: wheat;
+  cursor: pointer;
+}
+.product-content-right-product-icon {
+  display: flex;
+}
+.product-content-right-product-icon-item {
+  display: flex;
+  margin-right: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.product-content-right-product-icon-item i {
+  font-size: 12px;
+  margin-right: 6px;
+}
+.product-content-right-product-QR img {
+  margin-top: 20px;
+  width: 40%;
+}
+.product-content-right-bottom {
+  padding-top: 40px;
+  border-top: 1px solid #01f801;
+  position: relative;
+}
+.product-content-right-bottom-top {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #d3d3d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff6f6;
+  top: -15px;
+  left: 50%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+.product-content-right-bottom-content-title {
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.product-content-right-bottom-content-title-item {
+  padding: 6px;
+  cursor: pointer;
+  margin-right: 6px;
+}
+.product-content-right-bottom-content-title-item p {
+  font-family: serif;
+  font-size: 17px;
+}
+.product-content-right-bottom-content {
+  padding-top: 30px;
+  font-family: serif;
+  font-size: 17px;
+}
+.product-content-right-bottom-content-big{
+  cursor: pointer;
+}
+.activeB{
+  display: none;
+}
+.product-content-right-bottom-content-baoquan{
+  display: none;
+}
