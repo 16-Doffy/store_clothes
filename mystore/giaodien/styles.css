@@ -450,6 +450,7 @@ header:hover {
   width: 50%;
   padding-left: 20px;
 }
+
 /* .product-content-right-product-color-img img{
   border-radius: 50%;
   width: 50px;
@@ -458,16 +459,19 @@ header:hover {
   font-family: "Courier New", Courier, monospace;
   font-size: 16px;
 }
+
 .product-content-right-product-name p {
   color: #858585;
   font-size: 12px;
 }
+
 .product-content-right-product-price {
   margin: 12px 0;
   font-size: 20px;
   font-weight: bold;
   font-family: "Courier New", Courier, monospace;
 }
+
 .product-content-right-product-color img {
   width: 30px;
   height: 30px;
@@ -492,15 +496,18 @@ header:hover {
   font-size: 12px;
   cursor: pointer;
 }
+
 .quantity {
   display: flex;
   margin-bottom: 20px;
 }
+
 .quantity input {
   width: 35px;
   padding-left: 3px;
   display: block;
 }
+
 .product-content-right-product-button {
   width: 150px;
   height: 40px;
@@ -508,6 +515,7 @@ header:hover {
   margin: 20px 0 12px;
   transition: all 0.5s ease;
 }
+
 .product-content-right-product-button:first-child {
   display: flex;
   justify-content: space-evenly;
@@ -521,34 +529,41 @@ header:hover {
   background-color: #d3d3d3;
   color: wheat;
 }
+
 .product-content-right-product-button:last-child {
   border: 2px solid #6951f0;
   color: #46f388;
   background-color: wheat;
   cursor: pointer;
 }
+
 .product-content-right-product-icon {
   display: flex;
 }
+
 .product-content-right-product-icon-item {
   display: flex;
   margin-right: 12px;
   justify-content: center;
   align-items: center;
 }
+
 .product-content-right-product-icon-item i {
   font-size: 12px;
   margin-right: 6px;
 }
+
 .product-content-right-product-QR img {
   margin-top: 20px;
   width: 40%;
 }
+
 .product-content-right-bottom {
   padding-top: 40px;
   border-top: 1px solid #01f801;
   position: relative;
 }
+
 .product-content-right-bottom-top {
   position: absolute;
   width: 30px;
@@ -563,6 +578,7 @@ header:hover {
   border-radius: 50%;
   transform: translateX(-50%);
 }
+
 .product-content-right-bottom-content-title {
   border-bottom: 2px solid #d3d3d3;
 }
@@ -572,21 +588,76 @@ header:hover {
   cursor: pointer;
   margin-right: 6px;
 }
+
 .product-content-right-bottom-content-title-item p {
   font-family: serif;
   font-size: 17px;
 }
+
 .product-content-right-bottom-content {
   padding-top: 30px;
   font-family: serif;
   font-size: 17px;
 }
-.product-content-right-bottom-content-big{
+
+.product-content-right-bottom-content-big {
   cursor: pointer;
 }
-.activeB{
+
+.activeB {
   display: none;
 }
-.product-content-right-bottom-content-baoquan{
+
+.product-content-right-bottom-content-baoquan {
   display: none;
+}
+
+.product-related {
+  margin-bottom: 50px;
+}
+
+.product-related-title {
+  margin: 20px 0;
+}
+
+.product-related-title p {
+  font-family: serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e56f1;
+  text-decoration: underline;
+  padding-left: 10px;
+}
+
+.product-related-item {
+
+  width: 20%;
+  text-align: center;
+  padding: 0 6px;
+}
+
+.product-related-item img {
+
+  width: 100%;
+
+}
+
+.product-related-item h1 {
+
+  font-family: serif;
+  font-size: 17px;
+  color: #6951f0;
+  margin-top: 14px;
+}
+
+.product-related-item p {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #21025d;
+}
+.product-related-item span {
+  font-size: 19px;
+  color: #21025d;
+  font-weight: bold;
+  background-color: #00dfef;
 }
