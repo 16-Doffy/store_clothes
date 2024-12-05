@@ -285,6 +285,7 @@ header:hover {
 .row {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 20px;
 }
 
 /*-------cartegory-----*/
@@ -770,14 +771,14 @@ header:hover {
 .cart-content-right table th{
   padding-bottom: 30px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 12px;
+  font-size: 20px;
   color: #000;
   border-collapse: collapse;
   border-bottom: 2px solid  #001a57;
 }
 .cart-content-right table td {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 12px;
+  font-size: 17px;
   color: #000;
   padding: 6px 0;
 }
@@ -794,7 +795,7 @@ border-bottom: 2px solid #001a57;
 }
 .cart-content-right-text p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   color: #000;
 }
 .cart-content-right-button{
@@ -831,7 +832,169 @@ border-bottom: 2px solid #001a57;
 }
 .cart-content-right-login p{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   color: #001a57;
   font-weight: bold;
+}
+/****************DELIVERY*************/
+.delivery{
+  padding: 100px 0;
+}
+.delivery-top-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delivery-top{
+  height: 2px;
+  width: 70%;
+  background-color: #e8ecec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0 100px;
+}
+.delivery-top-item{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #0f0f0f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(251, 251, 253);
+}
+.delivery-top-item i{
+  color: rgb(75, 71, 71);
+}
+.delivery-top-address{
+  border: 1px solid #f50035;
+}
+.delivery-top-address i{
+  color:#46e0fc ;
+
+}
+.delivery-content {
+  display: flex;
+}
+
+.delivery-content-left{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-right: 12px;
+}
+.delivery-content-left p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+.delivery-content-left label{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-right: 12px;
+  margin-bottom: 6px;
+  display: block;
+}
+.delivery-content-left-login{
+  margin-top: 12px;
+
+}
+.delivery-content-left-login p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  
+  margin-right: 12px;
+}
+.delivery-content-left-khachle{
+  margin: 12px 0;
+
+}
+.delivery-content-left-khachle input{
+  margin-right: 12px;
+}
+.delivery-content-left-dangky{
+  margin-bottom: 30px;
+}
+.delivery-content-left-dangky input{
+  margin-right: 12px;
+}
+.delivery-content-left-input-top{
+  justify-content: space-between;
+}
+.delivery-content-left-input-top-item{
+  width: calc(45% - 12px);
+}
+.delivery-content-left-input-top-item input{
+  width: 100%;
+  height: 45%;
+  border: 1px solid rgb(2, 2, 2);
+padding-left: 6px;
+}
+.delivery-content-left-input-bottom input{
+  width: 100%;
+  height: 35%;
+  border: 1px solid rgb(14, 13, 13);
+padding-left: 6px;
+}
+.delivery-content-left-button p{
+  display: flex;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+}
+.delivery-content-left-button span{
+  margin-right: 12px;
+}
+.delivery-content-left-button{
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.delivery-content-left-button button {
+  height: 70%;
+  border: 1px solid rgb(14, 13, 13);
+  margin-right: 62px;
+  cursor: pointer;
+}
+.delivery-content-left-button button:hover {
+  background-color: black;
+  color: white;
+}
+.delivery-content-right{
+ 
+  padding-left: 12px;
+  border-left: 1px solid #000;
+ 
+
+}
+.delivery-content-right table{
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+.delivery-content-right table tr th:first-child{
+  text-align: left;
+}
+.delivery-content-right table tr th{
+  padding-bottom: 12px;
+  border-bottom: 1px solid white;
+}
+.delivery-content-right table tr th:last-child{
+  text-align: right;
+}
+.delivery-content-right table tr td{
+  padding: 6px 0;
+}
+.delivery-content-right table tr:nth-child(4){
+    border-top: 2px solid #000;
+}
+.delivery-content-right table tr td:last-child{
+  text-align: right;
+}
+.delivery-content-right table tr td:first-child{
+  text-align: left;
+}
+.delivery-content-left,
+.delivery-content-right {
+    width: 50%; 
+    box-sizing: border-box;
+    padding: 10px; 
 }

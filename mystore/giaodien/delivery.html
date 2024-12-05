@@ -71,125 +71,112 @@
             </li>
         </div>
     </section>
-    <!----------------------Cart--------------->
-
-    <section class="cart">
+    <!----------------------Delivery--------------->
+    <section class="delivery">
         <div class="container">
-            <div class="cart-top-wrap ">
-                <div class="cart-top ">
-                    <div class="cart-top-cart cart-top-item">
+            <div class="delivery-top-wrap ">
+                <div class="delivery-top ">
+                    <div class="delivery-top-delivery delivery-top-item">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </div>
 
-                    <div class="cart-top-cart cart-top-item">
+                    <div class="delivery-top-address delivery-top-item">
                         <i class="fa-solid fa-map"></i>
                     </div>
 
-                    <div class="cart-top-cart cart-top-item">
+                    <div class="delivery-top-payment delivery-top-item">
                         <i class="fa-solid fa-money-bill-wave"></i>
                     </div>
-
-
                 </div>
             </div>
         </div>
-        
         <div class="container">
-            <div class="cart-content">
-                <!----------------------Cart left--------------->
-                
-                <div class="cart-content-left">
+            <div class="delivery-content">
+                    <!----------------------Delivery--left------------->
+                <div class="delivery-content-left">
+                    <p>Vui lòng chọn địa chỉ giao hàng</p>
+                    <div class="delivery-content-left-login row">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <p>Đăng nhập (nếu bạn đã có tài khoản Doffy)</p>
+                    </div>
+                    <div class="delivery-content-left-khachle row">
+                        <input checked name="loaikhach" type="radio" value="khachle" >
+                        <p> <span style="font-weight: bold;">Khách Lẻ</span> (nếu bạn không muốn lưu lại thông tin)</p>
+                    </div>
+                    <div class="delivery-content-left-dangky row">
+                        <input checked name="loaikhach" type="radio"  >
+                        <p> <span style="font-weight: bold;">Đăng kí</span> (tạo mới tài khoản với thông tin bên dưới)</p>
+                    </div>
+                    <div class="delivery-content-left-input-top row">
+                        <div class="delivery-content-left-input-top-item">
+                            <label for="">Họ và tên <span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+                        <div class="delivery-content-left-input-top-item">
+                            <label for="">Điện thoại <span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+                        <div class="delivery-content-left-input-top-item">
+                            <label for="">Tỉnh/Tp <span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+                        <div class="delivery-content-left-input-top-item">
+                            <label for="">Quận/Huyện <span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+                        <div class="delivery-content-left-input-bottom">
+                            <label for="">Địa chỉ <span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+
+                        <div class="delivery-content-left-button row">
+                            <button><p style="font-weight: bold ;">Thanh toán và giao hàng</p></button>
+                            <a href=""><p>Quay lại giỏ hàng</p><span>&#8617;</span></a>
+                            
+                        </div>
+                        
+                    </div>
+
+                </div>
+ <!----------------------Delivery--right------------->
+                <div class="delivery-content-right">
                     <table>
                         <tr>
-                            <th>Sản phẩm</th>
                             <th>Tên sản phẩm</th>
-                            <th>Màu</th>
-                            <th>Size</th>
-                            <th>SL</th>
+                            <th>Giảm giá</th>
+                            <th>Số lượng</th>
                             <th>Thành tiền</th>
-                            <th>Xóa</th>
                         </tr>
                         <tr>
-
-                            <td><img src="../images/w3.jpg" alt=""></td>
-                            <td>
-                                <p>Sườn xám trung hoa</p>
-                            </td>
-                            <td><img src="../images/color.jpg" alt=""></td>
-                            <td>
-                                <p>L</p>
-                            </td>
-                            <td><input type="number" min="1"></td>
-                            <td>
-                                <p>340.991 <sup>đ</sup></p>
-                            </td>
-                            <td><span>X</span></td>
-
+                            <td>Sườn xám hoa sen</td>
+                            <td>-45%</td>
+                            <td>1</td>
+                            <td><p>781.000 <sup>Đ</sup></p></td>
                         </tr>
-
                         <tr>
-                            <td><img src="../images/w6.jpg" alt=""></td>
-                            <td>
-                                <p>Sườn xám trung hoa</p>
-                            </td>
-                            <td><img src="../images/color.jpg" alt=""></td>
-                            <td>
-                                <p>L</p>
-                            </td>
-
-
-                            <td><input type="number" min="1"></td>
-                            <td>
-                                <p>340.991 <sup>đ</sup></p>
-                            </td>
-                            <td><span>X</span></td>
+                            <td>Sườn xám Katarian</td>
+                            <td>-45%</td>
+                            <td>1</td>
+                            <td><p>991.000 <sup>Đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;" colspan="3">Tổng sản phẩm</td>
+                            <td style="font-weight: bold;"><p>991.000 <sup>Đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;" colspan="3">Thuế VAT</td>
+                            <td style="font-weight: bold;"><p>991.000 <sup>Đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;" colspan="3">Tổng sản phẩm </td>
+                            <td style="font-weight: bold;"><p>1.231.000 <sup>Đ</sup></p></td>
                         </tr>
                     </table>
                 </div>
-          
-                <!----------------------Cart RIGHT--------------->
-               
-                <div class="cart-content-right">
-                    <table>
-                        <tr>
-                            <th colspan="2">Tổng tiền giỏ hàng</th>
-                        </tr>
-                        <tr>
-                            <td>Tổng sản phẩm</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>Tổng tiền hàng</td>
-                            <td>
-                                <p>430.122 <sup>d</sup></p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Tạm tính</td>
-                            <td>
-                                <p>430.122 <sup>d</sup></p>
-                            </td>
-                        </tr>
-                    </table>
-                    <div class="cart-content-right-text">
-                        <p>
-                            Sản phẩm nằm trong chương trình đồng giá, giảm giá trên 50% không hỗ trợ đổi trả</p>
-                        <p>Khi mua với 2 món trở lên bạn sẽ được giảm 50%</p>
-
-                    </div>
-                    <div class="cart-content-right-button">
-                        <button style="color: black; font-weight: bold; background-color: white;">Tiếp tục mua hàng</button>
-                        <button style="color: black; font-weight: bold;">Thanh toán</button>
-                    </div>
-                    <div class="cart-content-right-login">
-                        <p>Tài khoản</p>
-                        <p>Hãy <a href="login"> đăng nhập để tiếp tục trải ngiệm</a></p>
-                    </div>
-                </div>
-            
             </div>
         </div>
     </section>
+    
 
 
 
@@ -209,7 +196,7 @@
 
 
 
-    <!----------------------Cart-END--------------->
+    <!----------------------Delivery-END--------------->
     <!----------------------FOOTER--------------->
     <section class="app-container">
         <p>Tải ứng dụng Doflaming</p>
