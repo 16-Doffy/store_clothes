@@ -667,6 +667,17 @@ header:hover {
     padding: 100px 0;
 
   }
+  .cart-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-content-left,
+.cart-content-right {
+    width: 50%; 
+    box-sizing: border-box;
+    padding: 10px; 
+}
 
   .cart-top-wrap{
     display: flex;
@@ -738,7 +749,7 @@ header:hover {
 
 }
 .cart-content-left td:first-child img{
-  width: 140px;
+  width: 120px;
 
 }
 .cart-content-left td:nth-child(2){
@@ -748,13 +759,13 @@ header:hover {
   max-width: 30px;
 }
 .cart-content-right {
-  flex: 1;
+ 
   padding-left: 12px;
   border-left: 2px solid #000;
 }
 .cart-content-right table{
   width: 100%;
-
+  flex: 1;
 }
 .cart-content-right table th{
   padding-bottom: 30px;
