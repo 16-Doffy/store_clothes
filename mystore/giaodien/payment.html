@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <script src="../js/script.js" defer></script>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+</head>
+
+<body>
+
+    <section class="header">
+
+        <div class="logo">
+
+            <img src="../images/df.jpg" alt="logo" />
+
+        </div>
+
+        <div class="menu">
+            <li class="menu-item">
+                <a href="Nữ">Nữ</a>
+                <ul class="sub-menu">
+                    <li><a href="">Hàng mới về</a></li>
+                    <li><a href="">Collection</a></li>
+                    <li>
+                        <a href="">Áo</a>
+                        <ul>
+                            <li><a href="">Áo somi</a></li>
+                            <li><a href="">Áo thun</a></li>
+                            <li><a href="">Áo jean</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Quần</a>
+                        <ul>
+                            <li><a href="">Quần jogger</a></li>
+                            <li><a href="">Quần thun</a></li>
+                            <li><a href="">Quần jean</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Nam">Nam</a></li>
+            <li><a href="Trẻ em">Trẻ em</a></li>
+            <li><a href="Sale">Sale</a></li>
+            <li><a href="Khẩu trang">Khẩu trang</a></li>
+            <li><a href="Bộ sưu tập">Bộ sưu tập</a></li>
+            <li><a href="Thông tin">Thông tin</a></li>
+        </div>
+
+        <div class="others">
+            <li>
+                <input type="text" placeholder="tìm kiếm" />
+                <div class="icon-header">
+                    <a href=""><span class="iconify" data-icon="fa6-brands:facebook"></span></a>
+                    <a href=""><span class="iconify" data-icon="fa6-brands:instagram"></span></a>
+                    <a href=""><span class="iconify" data-icon="fa6-brands:github"></span></a>
+                </div>
+            </li>
+        </div>
+    </section>
+    <!----------------------PAYMENT--------------->
+ <section class="payment">
+    <div class="container">
+        <div class="payment-top-wrap ">
+            <div class="payment-top ">
+                <div class="payment-top-start payment-top-item">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+
+                <div class="payment-top-address payment-top-item">
+                    <i class="fa-solid fa-map"></i>
+                </div>
+
+                <div class="payment-top-payment payment-top-item">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="payment-content row">
+                <!----------------------PAYMENT-LEFT--------------->
+            <div class="payment-content-left">
+                    <div class="payment-content-left-method-delivery">
+                        <p style="font-weight: bold;">Phương thức giao hàng</p>
+                        <div class="payment-content-left-method-delivery-item">
+                            <input checked  type="radio">
+                            <label for="">Giao hàng chuyển phát nhanh</label>
+                        </div>
+                    </div>
+                    <div class="payment-content-left-method-payment">
+                        <p style="font-weight: bold;">Phương thức thanh toán</p>
+                        <p>Hỗ trợ thanh toán với:</p>
+                        <div class="payment-content-left-method-payment-item">
+                            <input name="method-payment" type="radio">
+                            <label for="">Thanh toán bằng thẻ tín dụng(OnePay)</label>
+                        </div>
+                        <div class="payment-content-left-method-payment-item-img">
+                            <img src="../images/payment.jpg" alt="">
+                            <img src="../images/1pay.jpg" alt="">
+                            <img src="../images/visa.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="payment-content-left-method-payment-item">
+                        <input checked name="method-payment" type="radio">
+                        <label for="">Thanh toán bằng thẻ tín dụng(Viettinbank)</label>
+                    </div>
+
+                    <div class="payment-content-left-method-payment-item-img">
+                        <img src="../images/vit.png" alt="">
+                    </div>
+
+                    <div class="payment-content-left-method-payment-item">
+                        <input name="method-payment" type="radio">
+                        <label for="">Thanh toán bằng thẻ tín dụng(MoMo)</label>
+                    </div>
+
+                    <div class="payment-content-left-method-payment-item-img">
+                        <img src="../images/momo.jpg" alt="">
+                    </div>
+
+                    <div class="payment-content-left-method-payment-item">
+                        <input name="method-payment" type="radio">
+                        <label for="">Thu tiền tận nơi</label>
+                    </div>
+
+            </div>
+                <!----------------------PAYMENT-RIGHT-------------->
+            <div class="payment-content-right">
+                <div class="payment-content-right-button row">
+                    <input type="text" placeholder="Mã giảm giá/Quà tặng">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+
+                <div class="payment-content-right-button row">
+                    <input type="text" placeholder="Mã cộng tác viên/Giới thiệu">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+
+                <div class="payment-content-right-mnv">
+                    <select id="" name>
+                        <option value="">Chọn mã nhân viên thân thiết</option>
+                        <option value="">D991</option>
+                        <option value="">O1100</option>
+                        <option value="">F5362</option>
+                        <option value="">YY22119</option>
+                    </select>
+                </div> 
+            </div>
+        </div>
+        <div class="payment-content-right-payment">
+            <button>Tiếp tục thanh toán</button>
+        </div>
+    </div>
+ </section>
+
+
+
+
+
+
+
+    <!----------------------PAYMENT-END--------------->
+    <!----------------------FOOTER--------------->
+    <section class="app-container">
+        <p>Tải ứng dụng Doflaming</p>
+        <div class="app-google">
+            <img src="../images/gg.png" alt="Google Play" />
+            <img src="../images/df.jpg" alt="App Store" />
+        </div>
+        <p>Nhận bản tin Doflamin</p>
+        <input type="text" placeholder="Nhập email của bạn" />
+    </section>
+    <div class="footer-top">
+        <li>
+            <a href=""><img src="../images/td.jpg" alt="" /></a>
+        </li>
+        <li><a href="">Liên hệ</a></li>
+        <li><a href="">Tuyển dụng</a></li>
+        <li><a href="">Giới Thiệu</a></li>
+        <li>
+            <a href=""><span class="iconify" data-icon="fa6-brands:facebook"></span></a>
+            <a href=""><span class="iconify" data-icon="fa6-brands:instagram"></span></a>
+            <a href=""><span class="iconify" data-icon="fa6-brands:github"></span></a>
+        </li>
+    </div>
+    <div class="footer-center">
+        <p>
+            Địa chỉ Lô 26-28 Tân Tạo, KCN Tân Tạo, Phường Tân Tạo A, Quận Bình Tân,
+            Tp.HCM <br />
+            Công ty cổ phần thời trang Doffl <br />
+            Đặt hàng online: <span>067892211</span>
+        </p>
+    </div>
+
+
+
+
+</body>
+
+</html>
